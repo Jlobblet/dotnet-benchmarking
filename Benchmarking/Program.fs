@@ -86,6 +86,8 @@ let main _ =
                                    positives |]
 
            "C# Linq Concat", negatives.LinqConcat positives
+           
+           "C# foreach loops", negatives.ForeachConcat positives
 
            "SelectMany",
            Concat.SelectManyConcat [| negatives
