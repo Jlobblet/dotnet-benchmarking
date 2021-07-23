@@ -80,9 +80,12 @@ let main _ =
            "F# Seq Expression with Reduce",
            Concat.FSharpSeqExpressionMany [| negatives
                                              positives |]
-           
-           "F# Collect", Concat.FSharpCollect [| negatives
-                                                 positives |]
+
+           "F# Collect",
+           Concat.FSharpCollect [| negatives
+                                   positives |]
+
+           "C# Linq Concat", negatives.LinqConcat positives
 
            "SelectMany",
            Concat.SelectManyConcat [| negatives
